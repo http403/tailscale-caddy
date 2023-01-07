@@ -1,5 +1,6 @@
 FROM caddy:2.6-builder AS builder
 
+# This build caddy with custom modules
 RUN xcaddy build \
         --with github.com/mholt/caddy-webdav
 
