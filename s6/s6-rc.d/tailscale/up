@@ -1,0 +1,8 @@
+#!/bin/execlineb -P
+
+with-contenv
+importas -i ts_auth_key TS_AUTH_KEY
+importas -D 80 ts_port TS_PORT
+
+if { /usr/bin/tailscale up --authkey=$ts_auth_key } 
+/usr/bin/tailscale funnel --bg $ts_port
