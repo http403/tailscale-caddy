@@ -1,0 +1,3 @@
+#!/bin/execlineb -P
+
+exec logutil-service /var/log/s6/tailscale

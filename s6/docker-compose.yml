@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  caddy:
+    build:
+      context: .
+      target: release
+    hostname: "web" # This will dictate the hostname on your Tailnet. Comment out to get a random 12 hexadecimal hostname.
+    environment:
+      TS_AUTH_KEY: "insert your key here"
+    volumes:
+      - ./data:/data
+      - ./config:/config
+      - ./logs:/var/log/s6

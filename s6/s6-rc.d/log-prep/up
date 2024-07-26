@@ -1,0 +1,5 @@
+#!/bin/execlineb -P
+
+if { mkdir -p /var/log/s6 }
+if { chown nobody:nogroup /var/log/s6 }
+chmod 02755 /var/log/s6
