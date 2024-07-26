@@ -1,6 +1,6 @@
 # Caddy over Tailscale
 
-This repository contains an example Docker Compose configuration that servers Caddy over Tailscale using side car method.
+This repository contains an example Docker Compose configuration that serves Caddy over Tailscale using an approximation to sidecar pattern.
 
 This have the benefits of not needing to use a privileged container, mounting TUN device, and using host network mode. The downside will be the need to create a new image.
 
