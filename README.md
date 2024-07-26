@@ -6,4 +6,4 @@ This have the benefits of not needing to use a privileged container, mounting TU
 
 ### Environment Variables
 - `TS_AUTH_KEY` Your Tailscale auth key, generate one at https://login.tailscale.com/admin/settings/keys
-- `TS_PORT` The port Caddy listening at. It defaults to 80 if empty.
+- `TS_PORT` The port Caddy listening at and Tailscale should proxy to. It defaults to 80 if empty.
